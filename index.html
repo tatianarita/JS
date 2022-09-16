@@ -4,9 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>VIVER</title>
 </head>
 <body>
+    <h1>SOLICITAR PRESUPUESTO VIVER</h1>
+    <form id="formulario">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" required="">
+            <label for="apellido">Apellido:</label>
+            <input type="text" name="apellido">
+            <label for="tel">Telefono:</label>
+            <input type="number">
+            <label for="email">Email:</label>
+            <input type="email">
+            <label for="Detalles">Detalles:</label>
+            <textarea name="Detalles:" id="" cols="30" rows="5" placeholder="describe el lugar que quieres volver verde"></textarea>
+            <input class="btn" type="submit" value="Enviar">
+            <input class="btn" type="reset" value="Borrar">
+    </form>
+    <div id="presupuesto">
+
+    </div>
     <script src="main.js"></script>
 </body>
 </html>

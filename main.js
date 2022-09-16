@@ -1,24 +1,32 @@
-alert ('Bienvenidos a Viver');
+let formulario = document.getElementById("formulario");
+let presupuesto = document.getElementById("presupuesto");
+const pedido =[]
+formulario.addEventListener("submit", (e) => {
+e.preventDefault () 
+const pedido =[]
+let input = e.target.children;
+pedido.push(input[1].value);
+pedido.push(input[3].value);
+pedido.push(input[5].value);
+pedido.push(input[7].value);
+pedido.push(input[9].value);
+presupuesto.innerHTML = "";
 
-let nombre = prompt('Ingrese su nombre');
+let nombre = pedido[0];
+let apellido = pedido[1];
+let telefono = pedido[2];
+let email = pedido[3];
+let detalle = pedido[4];
 
-alert(`Hola ${nombre}! vamos a ponerle onda a tu vida`);
 
-const plantas =[
-    {id: 1, tipo: 'suculentas', ambiente: 'exterior', riego: 'regular'},
-    {id: 2, tipo: 'plantas de interior', ambiente: 'interior', riego: 'poco'},
-    {id: 3, tipo: 'cactus', ambiente: 'interior o exterior', riego: 'poco'},
-    {id: 4, tipo: 'plantas fumanchu', ambiente: 'escondidas si son muchas', riego: 'moderado'},
-];
 
-let buscar = prompt('Qué tipo de plantas buscas?');
+pedido.forEach((item) => {
+    let div = document.createElement("div");
+    div.innerHTML = item; 
+    presupuesto.append(div);
+});
 
-let busqueda = plantas.find((item) => item.tipo === buscar);
+alert(`${nombre} tu consulta ha sido enviada con exito!
+Resumen:${detalle} `)
 
-console.log(busqueda);
-
-if( busqueda === undefined ){
-mensaje="No le hay de esa";
-console.log(mensaje);
-plantas.forEach(index => console.log(index))
-}
+})
