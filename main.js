@@ -30,9 +30,8 @@ pedido.forEach((item) => {
     presupuesto.append(div);
 });
 
-
-alert(`${nombre} tu consulta ha sido enviada con exito!
-Resumen:${detalle} `)
+Swal.fire(
+    'Tu consulta ha sido enviada con exito!')
 
 })
 
