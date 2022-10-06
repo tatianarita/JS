@@ -1,0 +1,5 @@
+[
+ {"id": "opción 1:", "nombre":"suculentas", "precio": "entre $5000 y $10000"},
+ {"id":"opción 2:", "nombre": "plantas de interior", "precio": "entre $6000 y $8000"},
+ {"id":"opción 3:", "nombre": "cactus", "precio": "entre $7000 y $11000"}
+]
