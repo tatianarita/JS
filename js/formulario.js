@@ -49,13 +49,11 @@ fetch("./data.json")
         })
     })
 
-// let aproximados = JSON.stringify(['suculentas entre $5000 y $10000','plantas de interior entre $6000 y $8000','cactus entre $7000 y $11000',]
-// );
-// localStorage.setItem ('aproximados', aproximados);
-// let datos = JSON.parse(localStorage.getItem("aproximados"));
-// console.log (datos)
-// datos.forEach((item) => {
-//     let div = document.createElement("div");
-//     div.innerHTML = item; 
-//     opciones.append(div);
-// });
+  
+
+    const contenedorproductos = document.getElementById("contenedorproductos")
+
+    stockplantas.forEach((producto) => {
+        const div = createElement(`div`)
+        div.innerHTML
+    });
