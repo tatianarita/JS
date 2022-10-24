@@ -38,7 +38,7 @@ function mostrarfiltro(array){
 }
 
 const buscadorProd = document.getElementById('buscadorProd');
-// filtro de búsqueda paquetes
+// filtro de búsqueda de productos
 buscadorProd.addEventListener('change',()=>{
   contenedorproductos.innerHTML = "";
   if (buscadorProd.value == 'plant') {mostrarfiltro(filterP)

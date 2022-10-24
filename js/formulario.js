@@ -28,24 +28,25 @@ let detalle = pedido[6];
 
 console.log (preferencia)
 const div = document.getElementById("opciones");
-/*fetch*/ 
+/*fetch*/
 if ((preferencia) == "cactus") { 
      fetch("../data.json")
     .then(response => response.json())
     .then(data=>{
         data.forEach(aproximados =>{
+            opciones.innerHTML = "";
             const div = document.createElement("div");
             div.innerHTML = `<p>Aproximado:</p>
             ${aproximados.opcion1}`;
             opciones.append(div);
-        })
+        })   
     })}
-
 if ((preferencia) == "suculentas") { 
     fetch("../data.json")
     .then(response => response.json())
     .then(data=>{
         data.forEach(aproximados =>{
+            opciones.innerHTML = "";
             const div = document.createElement("div");
             div.innerHTML = `<p>Aproximado:</p>
             ${aproximados.opcion2}`;
@@ -57,13 +58,13 @@ if ((preferencia) == "plantas de interior") {
     .then(response => response.json())
     .then(data=>{
         data.forEach(aproximados =>{
+            opciones.innerHTML = "";
             const div = document.createElement("div");
             div.innerHTML = `<p>Aproximado:</p>
             ${aproximados.opcion3}`;
             opciones.append(div);
         })
     })}
-
 pedido.forEach((item) => {
     let div = document.createElement("div");
     div.innerHTML = item; 
