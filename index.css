@@ -229,7 +229,8 @@ margin:8px}
     color: rgb(14, 150, 32);
     margin-bottom: 0;
     margin-left: 2rem;
-    max-width: 40%;
+    padding: 8px;
+    max-width: 15.5%;
     background-color: rgba(250, 240, 212, 0.611);
     border-radius: 20px;}
 #presupuesto {
