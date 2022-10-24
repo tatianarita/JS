@@ -7,9 +7,9 @@
     <meta name="keywords" content="PLANTAS, SUCULENTAS, CACTUS, INTERIOR, JARDINES, KOKEDAMAS, ARGENTINA">
     <meta name="description" content="inicio pagina de venta de suculentas y cactus">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM>+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../index.css">
     <script src="https://kit.fontawesome.com/d6b21ccffb.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="/imagenes/favicon.ico">
+    <link rel="shortcut icon" href="../imagenes/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,400&family=Luxurious+Roman&display=swap" rel="stylesheet">
@@ -19,7 +19,7 @@
     <header>
         <nav>
             <div class="slogan">
-                <img src= "imagenes/android-chrome-192x192.png" alt= "logoviver" class="slogan__logo">
+                <img src= "../imagenes/android-chrome-192x192.png" alt= "logoviver" class="slogan__logo">
                 <div class="slogan__name ">
                     <h1 class=text-large>
                         VIVER
@@ -30,44 +30,43 @@
                 </div>
             </div>
             <ul>
-                <li> <a href= "./index.html">Inicio </a></li>
-                <li> <a href= "./pages/consejos.html"> Nuestras Plantas</a></li>
-                <li><a href= "./pages/catalogo.html"> Catálogo </a></li>
-                <li><a href= "./pages/contacto.html"> Contacto </a></li>
+                <li> <a href= "../index.html">Inicio </a></li>
+                <li> <a href= "./consejos.html"> Nuestras Plantas</a></li>
+                <li><a href= "./catalogo.html"> Catálogo </a></li>
+                <li><a href= "./contacto.html"> Contacto </a></li>
             </ul>
         </nav>
     </header> 
-    <main id="ppal">
-        <div class="divtexto">
-            <p class="texto">
-                Vendemos suculentas, cactus y crasas en macetas personalizadas. Buscando contagiar VIbra VERde.
-            </p>
-        </div>
-        <div class="divcactus">
-                <div id="carouselExampleFade" class="carousel slide carousel-fade"data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="imagenes/fotocactus.jpg" class="d-block w-100" alt="kokedama">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="imagenes/Interior.jpg" class="d-block w-100" alt="plantasdeinterior">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="imagenes/Terrario.jpg" class="d-block w-100" alt="terrario">
-                    </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-        </div>
-    </main>
-    <hr>
+<body>
+    <h2 class="text-center tit">Pedinos Presupuesto!</h2>
+    <form id="formulario">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" required="">
+            <label for="apellido">Apellido:</label>
+            <input type="text" name="apellido">
+            <label for="preferencia">Preferencia:</label>
+            <input type="text" name="preferencia" placeholder="cactus/suculentas/plantas de interior">
+            <label for="espacio">Qué espacio tienes?</label>
+            <input type="text" name="espacio" placeholder="balcón, terraza, jardín o interior">
+            <label for="metros">Metros?</label>
+            <input type="number">
+            <label for="tel">Telefono:</label>
+            <input type="number">
+            <label for="email">Email:</label>
+            <input type="email">
+            <label for="Detalles">Detalles:</label>
+            <textarea name="Detalles:" id="" cols="30" rows="5" placeholder="personalizá tu pedido"></textarea>
+            <input class="btn" type="submit" value="Enviar">
+            <input class="btn" type="reset" value="Borrar">
+    </form>
+    <p class="resume">Resumen de tu pedido:</p>
+    <div id="presupuesto">
+        
+    </div>
+    <div id="opciones">
+        
+    </div>
+
     <footer>
         <section class="redes">
             <p class="seguinos">Seguinos!</p>
@@ -88,7 +87,8 @@
             <p class="copyright">Todos los derechos reservados Vibra Verde / VIVER</p>
           </section>
     </footer>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="../js/formulario.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-
 </body>
 </html>

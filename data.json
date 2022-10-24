@@ -1,5 +1,5 @@
 [
- {"id": "opción 1:", "nombre":"suculentas", "precio": "entre $5000 y $10000"},
- {"id":"opción 2:", "nombre": "plantas de interior", "precio": "entre $6000 y $8000"},
- {"id":"opción 3:", "nombre": "cactus", "precio": "entre $7000 y $11000"}
+{"opcion1": "Elegiste cactus, en ese caso, para un espacio de hasta 2mtrs cuadrados sería aprox. entre $7000 y 11000",
+ "opcion2": "Si te gustan las suculentas, para un espacio de hasta 2 mtrs cuadrados te puede salir entre $5000 y $10000",
+"opcion3": "Preferís las plantas de interior! en ese caso, para un espacio de hasta 2 mtrs cuadrados puede salir entre $ 4000 y $8000"}
 ]
