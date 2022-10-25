@@ -29,7 +29,7 @@ let detalle = pedido[6];
 console.log (preferencia)
 const div = document.getElementById("opciones");
 /*fetch*/
-if ((preferencia) == "cactus") { 
+if ((preferencia.toLowerCase()) == "cactus") { 
      fetch("../data.json")
     .then(response => response.json())
     .then(data=>{
@@ -41,7 +41,7 @@ if ((preferencia) == "cactus") {
             opciones.append(div);
         })   
     })}
-if ((preferencia) == "suculentas") { 
+if ((preferencia.toLowerCase()) == "suculentas") { 
     fetch("../data.json")
     .then(response => response.json())
     .then(data=>{
@@ -53,7 +53,7 @@ if ((preferencia) == "suculentas") {
             opciones.append(div);
         })
     })}
-if ((preferencia) == "plantas de interior") { 
+if ((preferencia.toLowerCase()) == "plantas de interior") { 
     fetch("../data.json")
     .then(response => response.json())
     .then(data=>{
